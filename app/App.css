@@ -1,0 +1,393 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #e6e6e6;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+/*/ TYPOGRAPHY /*/
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 1px;
+  line-height: 1.8rem;
+  color: rgb(175, 174, 174);
+  margin-bottom: 30px;
+}
+
+h1, h2, h3 {
+  font-family: 'Bad Script', cursive;
+  color: #e6e6e6;
+}
+
+h1 {
+  font-size: 5rem;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 4rem;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+a {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: rgb(185, 185, 185);
+  text-decoration: none;
+  display: block;
+  transition: ease-in-out 0.2s;
+}
+
+a:hover {
+  color: rgba(185, 185, 185, 0.8);
+}
+
+.nav-navbar li {
+  display: inline-block;
+  padding: 16px;
+}
+
+.work a {
+  display: inline-block;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.work p {
+  margin-bottom: 3rem;
+}
+
+.contact a {
+  display: inline-block;
+}
+
+/*/ ICONS /*/
+
+.header-icon {
+  font-size: 4rem;
+  margin-top: 9vh;
+  color: rgb(172, 172, 172);
+}
+
+.work-icon, .social-icon {
+  color: #e6e6e6;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.work-icon {
+  margin-right: 1rem;
+}
+
+.social-icon {
+  margin-right: 1.5rem;
+  color: rgb(66, 94, 61);
+  display: inline-block;
+}
+
+/*/ CONTAINERS /*/
+
+.app-container {
+  margin: 0 auto;
+  max-width: 1200px;
+  background: linear-gradient(to bottom, rgba(7, 7, 7, 0.623), rgba(7, 7, 7, 0.623)),
+  url('./leaves2.jpg');
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 
+    8px 8px 12px rgba(0, 0, 0, 0.5),
+    -8px -8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+}
+
+.container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 40px 80px;
+}
+
+.content {
+  width: 50%;
+}
+
+.skillbars {
+  width: 40%;
+}
+
+.work .left {
+  margin-right: 0px;
+}
+
+.work .content {
+  width: 100%;
+}
+
+.single-work {
+  margin-bottom: 30px;
+}
+
+.form .content {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*/ NAVIGATION /*/
+
+.nav {
+  top: 0;
+  width: 100%;
+  overflow: visible;
+  position: sticky;
+  z-index: 1;
+}
+
+.nav-navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+/*/ ADDITIONAL STYLING /*/
+
+.intro, .form {
+  background: rgb(17, 17, 17);
+}
+
+.work {
+  background: rgb(21, 27, 21);
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  text-align: left;
+  margin-right: 50px;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.transparent {
+  background: rgba(12, 12, 12, 0.623);
+}
+
+.with-bg {
+  background: rgb(12, 12, 12);
+}
+
+/*/ SKILLBARS /*/
+
+.skillbar {
+  background: rgb(68, 68, 68);
+  border-radius: 18px;
+  margin: 8px;
+  padding: 4px;
+  box-shadow: 
+    inset 0 2px 9px  rgba(255, 255, 255, 0.185),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.514);
+}
+
+.skillbar span {
+  margin: 0;
+  padding: 6px 8px;
+  float: right;
+  display: block;
+}
+
+.skillbar-tag {
+  left: 0;
+  padding: 6px 8px;
+  background: rgb(86, 126, 86);
+  border-radius: 14px;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+  display: inline-block;
+  box-shadow: 
+    inset 0 2px 9px  rgba(255, 255, 255, 0.185),
+    inset 0 -2px 6px rgba(0, 0, 0, 0.514);
+}
+
+/*/ FORM /*/
+
+.form label {
+  width: 100%;
+  padding: 15px 0;
+  color: rgb(175, 174, 174);
+  letter-spacing: 1px;
+}
+
+.form input, .form textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+  border-radius: 5px;
+  background: rgb(66, 94, 61);
+  border: 0;
+  font-size: 1rem;
+  color: rgb(17, 17, 17);
+}
+
+.submit-btn {
+  background: rgb(42, 58, 39);
+  border: 2px solid rgb(42, 58, 39);
+  border-radius: 4px;
+  padding: 8px 11px;
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: rgb(175, 174, 174);
+  margin: 15px 0;
+  transition: ease-in-out 0.3s;
+}
+
+.submit-btn:hover {
+  background: rgb(21, 27, 21);
+  color: rgb(134, 134, 134);
+}
+
+/*/ IMAGES /*/
+
+.contact-pic {
+  max-width: 10rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+/*/ MEDIA QUERIES - LARGE SCREENS /*/
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    height: 100vh;
+  }
+}
+
+/*/ MEDIA QUERIES - MEDIUM SCREENS /*/
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .header-icon {
+    font-size: 3rem;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .skillbar {
+    width: 100%;
+    padding: 4px;
+  }
+  
+  .big {
+    font-size: 8vw;
+  }
+
+  .medium {
+    font-size: 6vw;
+  }
+
+  .content {
+    margin: 0;
+    padding: 40px 58px;
+  }
+
+  .skillbars {
+    width: 70%;
+    padding-bottom: 40px;
+  }
+
+  .contact-pic {
+    max-width: 12rem;
+  }
+}
+
+/*/ MEDIA QUERIES - SMALL SCREENS /*/
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .header {
+    height: 95vh;
+  }
+
+  .header-icon, .social-icon {
+    font-size: 1.8rem;
+  }
+
+  .skillbar span, .skillbar-tag {
+    font-size: 0.8rem;
+    padding: 2px 4px;
+  }
+
+  .work a, .contact a {
+    font-size: 0.8rem;
+  }
+}
